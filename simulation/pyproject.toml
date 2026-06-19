@@ -1,0 +1,9 @@
+[project]
+name = "politics-as-flavoring-agent-sim"
+version = "0.1.0"
+description = "Identification, plateau threshold, and contamination asymmetry for Politics as a Flavoring Agent: when political meaning becomes a hedonic product attribute"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+]

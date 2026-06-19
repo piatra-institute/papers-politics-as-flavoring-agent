@@ -1,0 +1,21 @@
+# Research
+
+Findings, tiered by source proximity.
+T1 primary · T2 authoritative secondary · T3 reference · T4 general web (leads only).
+
+## Findings
+
+- [T1] Price cues raise reported pleasantness of an identical wine and raise activity in medial orbitofrontal cortex (a region encoding experienced pleasantness) — Plassmann, O'Doherty, Shiv and Rangel (2008), PNAS 105(3):1050–1054 — grounds the flavoring channel: a belief about a product alters the experience itself, not only the choice. Used in §2 and the §8 boundary ("the orbitofrontal cortex does not distinguish the pleasure a price cue buys").
+- [T1] Telling tasters about a distinctive beer additive lowers liking only when disclosed before tasting, not after — Lee, Frederick and Ariely (2006), Psychological Science 17(12):1054–1058 — expectation, not chemistry, moves the hedonic verdict. Anchors λ_+ magnitude band and the flavoring mechanism in §2/§3.
+- [T2] Negativity dominance: a negative element combined with a positive yields a more-negative whole, sharpest in contagion (sewage/wine asymmetry) — Rozin and Royzman (2001), Personality and Social Psychology Review 5(4):296–320; reinforced by Baumeister, Bratslavsky, Finkenauer and Vohs (2001), Review of General Psychology 5(4):323–370 — supplies the λ_- > λ_+ asymmetry that drives the §6 activism trap. Ratio set to 2.33 (λ_+ = 0.15, λ_- = 0.35) within the reported band.
+- [T1] Moral disgust recruits the oral/gustatory disgust system (levator labii activation to unfairness; shared facial signature with distaste) — Chapman, Kim, Susskind and Anderson (2009), Science 323(5918):1222–1226 — licenses "a beer can taste politically dirty" literally rather than metaphorically (§2).
+- [T2] Moralization turns preferences into moral convictions, recruiting disgust — Rozin (1999), Psychological Science 10(3):218–221 — supports the migration of political content into the disgust/taste channel.
+- [T2] Disagreement with a brand's stand harms attitudes more than agreement helps — Mukherjee and Althuizen (2020), IJRM 37(4):772–788 — empirical counterpart of the model's contamination asymmetry; the model generates this rather than assuming it.
+- [T2] Divisive corporate political advocacy is riskier for high-market-share brands than low-share ones — Hydock, Paharia and Blair (2020), JMR 57(6):1135–1151 — the large-share-brand penalty that the §6 break-even result reproduces from the contagion asymmetry alone.
+- [T2] Average investor reaction to corporate sociopolitical activism events is adverse — Bhagwat, Warren, Beck and Watson (2020), Journal of Marketing 84(5):1–21 — corroborates the net-negative default for politicization of a broad base.
+- [T2] Boycott vs buycott are distinct approach/avoidance acts with different participants — Neilson (2010), J. Consumer Behaviour 9(3):214–227; Kam and Deichert (2020), Journal of Politics 82(1):72–88 — supports treating misalignment penalty and alignment bonus as separate, asymmetric terms.
+- [T2] Political consumerism is a mode of political participation — Stolle, Hooghe and Micheletti (2005), IPSR 26(3):245–269; Micheletti (2003) — the field the paper narrows from "reason to act" to "modifier of experience."
+- [T2] Affective polarization sorts the electorate into hostile camps — Iyengar, Lelkes, Levendusky, Malhotra and Westwood (2019), Annu. Rev. Polit. Sci. 22:129–146 — justifies the bimodal consumer-position distribution.
+- [T2] Brand authenticity / woke-washing turns on alignment between stance and practice — Vredenburg, Kapitan, Spry and Kemper (2020), JPP&M 39(4):444–460 — frames the §7 discipline-vs-ritual axis.
+- [T3] Expectation/quality economics: identity enters utility (Akerlof and Kranton, 2000, QJE 115(3):715–753); experience/credence qualities (Nelson, 1970, JPE 78(2):311–329); commoditization as homogeneity + low switching cost (Reimann, Schilke and Thomas, 2010, IJRM 27(2):188–197) — background for the plateau and the sorting channel.
+- [T4] Public case record (Bud Light decline, Nike/Kaepernick, Russia corporate exits, Israel-related fast-food/coffee boycotts, Ben & Jerry's settlement dispute) — used in §7 only as illustrations sorted by the model's axes, with no quantitative claim attributed to the model.
