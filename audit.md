@@ -16,3 +16,13 @@ Verification:
   - claims: 25 prose decimals, 0 without a matching results.json value (added rounded headline keys so the reported 0.036 audits).
   - build: 14 pages, 0 missing-character warnings.
   - check => PASS
+
+---
+
+## 2026-07-02 — reform pass (de-template)
+
+Corpus reform, structural (the identification result and the ordinal-stipulation caveats were already presented honestly; §4 deliberately derives the plateau bracket-collapse as the central result, §8 already concedes the dispersions are ordinal).
+
+- paper/PAPER.md abstract: replaced the twin boilerplate closer "It does not certify that any named market is, and the closing section is precise about the difference" (shared with two other June papers) with a distinct ending stating the single discipline running through the three results.
+- paper/PAPER.md §8: retitled "What the Construct Licenses, and What It Does Not" -> "The Cover That Vagueness Gave" and softened the "Three boundaries hold the rest in place" ledger opener; ends on the beer/phone callback. No number or citation changed.
+- Verify: voice 0 errors; refs 42/42, 0 missing/0 unused; claims 25/0 unmatched; check => PASS; synced.
