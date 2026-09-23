@@ -93,6 +93,19 @@ def political_term(a: np.ndarray, lam_pos: float, lam_neg: float) -> np.ndarray:
     return lam_pos * a - lam_neg * (1.0 - a)
 
 
+def _bisect(f, lo: float, hi: float, tol: float = 1e-7) -> float:
+    """Bisection for the sign change of f on [lo, hi] (f(lo) and f(hi) differ in sign)."""
+    flo = f(lo) > 0
+    assert (f(hi) > 0) != flo, "no sign change in bracket"
+    while hi - lo > tol:
+        mid = 0.5 * (lo + hi)
+        if (f(mid) > 0) == flo:
+            lo = mid
+        else:
+            hi = mid
+    return 0.5 * (lo + hi)
+
+
 # ---------------------------------------------------------------------------
 # Study 1: identification. At the quality plateau (both goods at F0) the labeled
 # market is exactly invariant to the flavoring share phi, while the blind-versus-
@@ -211,6 +224,14 @@ def plateau() -> dict:
             half_pt = float(d)
             break
 
+    # The grid values above are the first grid point (step 0.005) past each
+    # crossing. Refine both crossings by bisection on the (monotone) share.
+    cross_exact = _bisect(lambda d: _politics_determined_share(d, x) - target,
+                          cross - 0.005, cross)
+    half_exact = _bisect(lambda d: _politics_determined_share(d, x) - base / 2.0,
+                         half_pt - 0.005, half_pt)
+    assert abs(cross_exact - cross) <= 0.005 and abs(half_exact - half_pt) <= 0.005
+
     cats = []
     for name, dF in CATEGORY_DF.items():
         s = _politics_determined_share(dF, x)
@@ -228,6 +249,8 @@ def plateau() -> dict:
     return {
         "threshold_dF_quarter": cross,
         "threshold_dF_halfmax": half_pt,
+        "threshold_dF_quarter_exact": cross_exact,
+        "threshold_dF_halfmax_exact": half_exact,
         "plateau_politics_determined_share": float(base),
         "sweep": [{"dF": float(d), "share": float(s)}
                   for d, s in zip(grid, shares)],
@@ -289,6 +312,11 @@ def asymmetry() -> dict:
             breakeven = float(m)
             break
 
+    # the grid value is the first base mean (step 0.025) with a positive change;
+    # refine the zero crossing by bisection (the change is continuous in the mean)
+    breakeven_exact = _bisect(lambda m: _demand_change(m), breakeven - 0.025, breakeven)
+    assert breakeven - 0.025 <= breakeven_exact <= breakeven
+
     # symmetric control: with lam_neg = lam_pos, the centered brand is neutral-to-
     # positive; the penalty is entirely a creature of negativity dominance
     mass_symmetric = _demand_change(0.0, lam_neg=LAM_POS)
@@ -301,6 +329,7 @@ def asymmetry() -> dict:
         "niche_aligned_demand_change": niche_aligned,
         "niche_opposed_demand_change": niche_opposed,
         "breakeven_base_mean": breakeven,
+        "breakeven_base_mean_exact": breakeven_exact,
         "mass_brand_demand_change_symmetric_control": mass_symmetric,
         # headline figures as reported in the paper, rounded to three decimals
         "reported": {
@@ -362,8 +391,11 @@ def sensitivity() -> dict:
             if _demand_change(float(m), lam_neg=lam_neg) > 0:
                 be = float(m)
                 break
+        be_exact = (_bisect(lambda m: _demand_change(m, lam_neg=lam_neg), be - 0.025, be)
+                    if be is not None and be > -1.5 else None)
         out_ratio.append({"ratio": r, "mass_brand_demand_change": mass,
-                          "breakeven_base_mean": be})
+                          "breakeven_base_mean": be,
+                          "breakeven_base_mean_exact": be_exact})
     taus = [0.6, 0.8, 1.0, 1.2, 1.6]
     x = make_population()
     out_tau = []

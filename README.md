@@ -1,6 +1,8 @@
-# politics-as-flavoring-agent
+# Politics as a Flavoring Agent
 
-When functional quality across competing products has converged, political meaning takes over the work of differentiation, and it does so through two channels an outside observer cannot tell apart: sorting (politics changes which good is chosen, leaving its experienced quality intact) and flavoring (politics changes the experienced quality itself, so the same physical good is tasted as better when its label aligns). This paper builds the smallest model that holds both, with a mixture parameter for how much of the political premium is flavoring, and shows that at the quality plateau the labeled market is exactly invariant to that parameter: revealed preference cannot recover it, and only a blind-versus-labeled relabeling experiment can. The same plateau condition yields a category-susceptibility threshold that reproduces the received typology, and the negativity-dominance of moral contamination yields the large-share-brand penalty of corporate activism. Ships a runnable simulation whose output carries every modelled number.
+Moralized Demand and the Limits of Revealed Preference.
+
+Consumers who will not switch phones over a manufacturer's politics often switch beer brands over an advertisement. We attribute the asymmetry to functional convergence: when competing products have converged, political meaning can take over differentiation through two channels. Under sorting, politics changes which good is chosen and leaves its experienced quality intact; under flavoring, politics changes the experience, so the same physical good is rated better under an aligned label and worse under a misaligned one. We build a minimal model containing both channels and a mixture parameter $\phi$, the flavoring share of the political premium, and solve it for 60,000 consumers. At the quality plateau the labeled market is invariant to $\phi$: choice data are identical for every split, and a political premium of $0.362$ functional-quality units is consistent with any $\phi$ in $[0, 1]$. Only the within-good difference between blind and labeled ratings, $0.202$ per unit of $\phi$ for aligned consumers, identifies the split. Sweeping functional dispersion gives a threshold $\Delta F^* = 0.443$ below which politics decides most contested choices; ten categories placed on this axis split into bottled water through cosmetics on the flavor-dominated side and phones through medical devices on the other. With the misalignment penalty $2.33$ times the alignment bonus, a mass-market brand that adopts a political position loses $0.036$ of demand, where a symmetric model predicts a gain of $0.008$; adoption pays only for a base centred beyond $0.415$ toward the adopted pole. Market data fix the premium, threshold, and activism penalty; the flavoring share requires experimental measurement.
 
 ## Build
 
@@ -8,8 +10,6 @@ When functional quality across competing products has converged, political meani
 uv run build.py          # -> paper/PAPER.pdf  (vendored canonical recipe)
 ```
 
-Requires `pandoc` and `xelatex` on PATH. From the workspace you can also run
-`papers build politics-as-flavoring-agent`.
+Requires `pandoc` and `xelatex` on PATH. From the workspace you can also run `papers build politics-as-flavoring-agent`.
 
-Part of [piatra-papers](https://github.com/piatra-institute). See the workspace
-docs for the research and writing pipelines.
+Part of [piatra-papers](https://github.com/piatra-institute). See the workspace docs for the research and writing pipelines.

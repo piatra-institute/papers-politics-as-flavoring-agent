@@ -2,6 +2,18 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-23 — prose revision
+
+Headings now: Abstract; 1. Introduction; 2. Background: Expectation, Contamination, and Credence Goods; 3. Model; 4. Results (4.1 The flavoring share is unidentified at the quality plateau; 4.2 A functional-dispersion threshold for political choice; 4.3 Brand activism under negativity dominance); 5. Application to Public Cases; 6. Limitations; 7. Conclusion; Reproducibility.
+Tic counts before -> after (diag.py): rather than 20 -> 0; inline ", not X" 3 -> 0; negate-pivot 2 -> 0; "not X but Y" 4 -> 0; "the paper/this paper" 6 -> 0; merely/simply 2 -> 0; exactly/precisely 1 -> 0.
+Grid audit and corrections (analyses.py now has a bisection helper; new results.json fields keep the grid values alongside):
+- Plateau threshold dF* was the first point of a 0.005 grid with share < 0.25: 0.445 -> 0.443 (threshold_dF_quarter_exact = 0.44278); half-max crossing 0.445 -> 0.4425 (threshold_dF_halfmax_exact). Invariant asserted: |exact - grid| <= 0.005.
+- Activism break-even base mean was the first point of a 0.025 grid with a positive demand change: 0.425 -> 0.415 (breakeven_base_mean_exact = 0.41471), asserted to lie inside the bracketing grid cell.
+- Sensitivity break-evens refined likewise; the text's ratio-1.0 value -0.15 -> -0.152; ratio 4.0 has no crossing in the scanned range [-1.5, 1.5], now stated as "beyond 1.5, the upper limit of the scanned range" instead of "past the edge of the electorate".
+- The identification study (premium 0.362, swing 0.202) uses a symmetric weight lambda+ = lambda- = 0.25 (KAPPA_SYM), which the text previously did not state after introducing lambda+ = 0.15, lambda- = 0.35; now stated. The 0.202 swing is the mean over consumers whose chosen good is aligned, and the text now says so. The threshold study is at phi = 1, now stated.
+- Other numbers (0.501, category shares, -0.036, +0.008, 0.021, -0.138, -0.101, dispersion < 0.001) match results.json.
+Figures: aphoristic titles ("Market is blind to phi", "Only the lab swing identifies phi", "The good-enough plateau", "The activism trap") replaced with descriptive titles; threshold and break-even lines drawn at the refined values.
+
 ## 2026-06-19 — Initial implementation from seed chats
 Scope: full paper built from the three seed chats (chat-initial, chat, chat2) through the PIATRA pipeline.
 Changes:

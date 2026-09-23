@@ -19,13 +19,13 @@ def plot_identification(results: dict, path: str) -> None:
     ax1.set_ylim(0, 1)
     ax1.set_xlabel("flavoring share $\\phi$")
     ax1.set_ylabel("market share of good R")
-    ax1.set_title("Market is blind to $\\phi$")
+    ax1.set_title("Labeled market share across $\\phi$")
     ax1.axhline(shares[0], ls=":", color="#aaa")
 
     ax2.plot(phis, swings, "o-", color="#b2182b")
     ax2.set_xlabel("flavoring share $\\phi$")
     ax2.set_ylabel("blind$-$labeled hedonic swing")
-    ax2.set_title("Only the lab swing identifies $\\phi$")
+    ax2.set_title("Blind-versus-labeled hedonic swing")
     fig.tight_layout()
     fig.savefig(path, dpi=150)
     plt.close(fig)
@@ -38,18 +38,24 @@ def plot_plateau(results: dict, path: str) -> None:
     fig, ax = plt.subplots(figsize=(7, 4))
     ax.plot(xs, ys, color="#2166ac")
     if pl["threshold_dF_quarter"] is not None:
-        ax.axvline(pl["threshold_dF_quarter"], ls="--", color="#777",
-                   label=f"threshold $\\Delta F^*$ = {pl['threshold_dF_quarter']:.3f}")
+        ax.axvline(pl["threshold_dF_quarter_exact"], ls="--", color="#777",
+                   label=f"threshold $\\Delta F^*$ = {pl['threshold_dF_quarter_exact']:.3f}")
     for c in pl["categories"]:
         ax.scatter([c["dispersion_dF"]], [c["politics_determined_share"]],
                    color="#b2182b" if c["regime"] == "flavor-dominated" else "#1a9850",
                    zorder=5)
+        flav = c["regime"] == "flavor-dominated"
         ax.annotate(c["category"].replace("_", " "),
                     (c["dispersion_dF"], c["politics_determined_share"]),
-                    fontsize=7, rotation=30, ha="left", va="bottom")
+                    xytext=(2, -6) if flav else (3, 4), textcoords="offset points",
+                    fontsize=7, rotation=-55 if flav else 30,
+                    ha="left", va="top" if flav else "bottom",
+                    rotation_mode="anchor")
+    ax.set_xlim(-0.03, 0.92)
+    ax.set_ylim(-0.03, 0.56)
     ax.set_xlabel("functional dispersion $\\Delta F$ (fraction of $F_0$)")
     ax.set_ylabel("politics-determined choice share")
-    ax.set_title("The good-enough plateau")
+    ax.set_title("Politics-determined share against functional dispersion")
     ax.legend()
     fig.tight_layout()
     fig.savefig(path, dpi=150)
@@ -64,13 +70,13 @@ def plot_asymmetry(results: dict, path: str) -> None:
     ax.plot(xs, ys, color="#444")
     ax.axhline(0, ls=":", color="#aaa")
     if asy["breakeven_base_mean"] is not None:
-        ax.axvline(asy["breakeven_base_mean"], ls="--", color="#b2182b",
-                   label=f"break-even base = {asy['breakeven_base_mean']:.2f}")
+        ax.axvline(asy["breakeven_base_mean_exact"], ls="--", color="#b2182b",
+                   label=f"break-even base = {asy['breakeven_base_mean_exact']:.3f}")
     ax.scatter([0.0], [asy["mass_brand_demand_change"]], color="#b2182b",
                zorder=5, label="mass (centered) brand")
     ax.set_xlabel("brand base mean position (adopted pole at $+1$)")
     ax.set_ylabel("change in demand on politicization")
-    ax.set_title("The activism trap")
+    ax.set_title("Demand change on adopting a position, by base mean")
     ax.legend()
     fig.tight_layout()
     fig.savefig(path, dpi=150)

@@ -66,6 +66,8 @@
   "plateau": {
     "threshold_dF_quarter": 0.445,
     "threshold_dF_halfmax": 0.445,
+    "threshold_dF_quarter_exact": 0.44278163909912105,
+    "threshold_dF_halfmax_exact": 0.44252696990966794,
     "plateau_politics_determined_share": 0.5013833333333333,
     "sweep": [
       {
@@ -798,6 +800,7 @@
     "niche_aligned_demand_change": 0.021118627714083196,
     "niche_opposed_demand_change": -0.13840900316210167,
     "breakeven_base_mean": 0.42500000000000004,
+    "breakeven_base_mean_exact": 0.41470685005187985,
     "mass_brand_demand_change_symmetric_control": 0.00803416779219373,
     "reported": {
       "mass_brand_demand_change": -0.036,
@@ -1312,32 +1315,38 @@
       {
         "ratio": 1.0,
         "mass_brand_demand_change": 0.00803416779219373,
-        "breakeven_base_mean": -0.1499999999999999
+        "breakeven_base_mean": -0.1499999999999999,
+        "breakeven_base_mean_exact": -0.15212435722351064
       },
       {
         "ratio": 1.5,
         "mass_brand_demand_change": -0.007460116577848325,
-        "breakeven_base_mean": 0.125
+        "breakeven_base_mean": 0.125,
+        "breakeven_base_mean_exact": 0.11221213340759277
       },
       {
         "ratio": 2.0,
         "mass_brand_demand_change": -0.024152835518615107,
-        "breakeven_base_mean": 0.3250000000000002
+        "breakeven_base_mean": 0.3250000000000002,
+        "breakeven_base_mean_exact": 0.3057815074920655
       },
       {
         "ratio": 2.33,
         "mass_brand_demand_change": -0.035791968484696665,
-        "breakeven_base_mean": 0.42500000000000004
+        "breakeven_base_mean": 0.42500000000000004,
+        "breakeven_base_mean_exact": 0.4136684894561768
       },
       {
         "ratio": 3.0,
         "mass_brand_demand_change": -0.06079158510270119,
-        "breakeven_base_mean": 0.625
+        "breakeven_base_mean": 0.625,
+        "breakeven_base_mean_exact": 0.6130876064300537
       },
       {
         "ratio": 4.0,
         "mass_brand_demand_change": -0.10079183634358721,
-        "breakeven_base_mean": null
+        "breakeven_base_mean": null,
+        "breakeven_base_mean_exact": null
       }
     ],
     "by_kernel_width": [
