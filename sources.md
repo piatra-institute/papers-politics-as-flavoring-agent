@@ -87,3 +87,7 @@ Varadarajan, P. R., and Menon, A. (1988). Cause-related marketing. *Journal of M
 Veblen, T. (1899). *The Theory of the Leisure Class*. Macmillan. — consumption as social signaling; background for symbolic quality.
 
 Vredenburg, J., Kapitan, S., Spry, A., and Kemper, J. A. (2020). Brands taking a stand: Authentic brand activism or woke washing? *Journal of Public Policy & Marketing*, 39(4), 444–460. — authenticity as stance-practice alignment; frames §7.
+
+## Structured bibliography (2026-09-23)
+
+The inline reference list was migrated to references.yaml (CSL) and in-text citations to Pandoc [@id] syntax. Journal articles and the Palgrave monograph micheletti2003 were resolved through Crossref and doi.org and checked for year, title and authors; newman2011 keeps the 2011 issue year (the DOI record carries the 2010 online date). Entered by hand from the legacy text: banetweiser2012 (NYU Press; the DOI record 10.18574/nyu/9780814739372.001.0001 carries a later online date), bourdieu1984 (Harvard, trans. Nice), christensen1997, friedman1999, holt2004, tajfel1979 (chapter in Austin and Worchel, eds.) and veblen1899; mukherjee2020 and vredenburg2020 were completed by hand from their Crossref records (doi.org content negotiation failed for them at the time of migration). Crossref's title search had matched hirschman1970 to Tullock's review in the Journal of Finance; it is now the Harvard book. Source claims in claims.yaml were checked against Crossref abstracts.

@@ -1,6 +1,6 @@
 {
-  "pdf_sha256": "f9a6c01c340ffac84d3f8b73528f98d5f47a3006f5fa82246bb990f6573a0025",
-  "page_count": 13,
+  "pdf_sha256": "e939b281854113d84c50a94d4f82fd01ba1765731c0d53f71f848401e05bbf89",
+  "page_count": 14,
   "pages_inspected": [
     1,
     2,
@@ -14,8 +14,9 @@
     10,
     11,
     12,
-    13
+    13,
+    14
   ],
   "all_pages_inspected": true,
-  "notes": "All 13 pages inspected after the prose revision; figure titles replaced with descriptive text, and the overlapping category labels in the plateau figure (Figure 2) were re-placed and the axis limits widened so every label is legible. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (0d2c8bcc30dc to f9a6c01c340f); the rendered text is byte-for-byte identical and no page was re-inspected."
+  "notes": "All 14 pages inspected after the migration; citations and the citeproc reference list render correctly, no unresolved keys. Metadata-only rebuild: the web blurb in metadata.yaml, a hashed build input, changed, so the PDF was re-rendered (4fb73eac470a to e939b2818541); the rendered text is byte-for-byte identical and no page was re-inspected."
 }

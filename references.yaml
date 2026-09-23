@@ -1,0 +1,674 @@
+# CSL references with stable IDs; cite with Pandoc [@id] syntax.
+# Migrated from the legacy inline bibliography. Entries with a DOI were resolved through doi.org
+# content negotiation (CSL-JSON) and checked for year and title; others were matched in Crossref
+# or entered by hand. Provenance per entry is in sources.md.
+references:
+- id: akerlof1970
+  type: article-journal
+  title: 'The Market for "Lemons": Quality Uncertainty and the Market Mechanism'
+  author:
+  - given: George A.
+    family: Akerlof
+  container-title: Quarterly Journal of Economics
+  volume: '84'
+  issue: '3'
+  page: 488-500
+  DOI: 10.2307/1879431
+  issued:
+    date-parts:
+    - - 1970
+- id: akerlof2000
+  type: article-journal
+  title: Economics and Identity
+  author:
+  - given: George A.
+    family: Akerlof
+  - given: Rachel E.
+    family: Kranton
+  container-title: Quarterly Journal of Economics
+  volume: '115'
+  issue: '3'
+  page: 715-753
+  DOI: 10.1162/003355300554881
+  issued:
+    date-parts:
+    - - 2000
+- id: banetweiser2012
+  type: book
+  title: 'Authentic™: The Politics of Ambivalence in a Brand Culture'
+  author:
+  - family: Banet-Weiser
+    given: Sarah
+  publisher: New York University Press
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 2012
+- id: baumeister2001
+  type: article-journal
+  title: Bad is Stronger than Good
+  author:
+  - given: Roy F.
+    family: Baumeister
+  - given: Ellen
+    family: Bratslavsky
+  - given: Catrin
+    family: Finkenauer
+  - given: Kathleen D.
+    family: Vohs
+  container-title: Review of General Psychology
+  volume: '5'
+  issue: '4'
+  page: 323-370
+  DOI: 10.1037/1089-2680.5.4.323
+  issued:
+    date-parts:
+    - - 2001
+- id: berger2007
+  type: article-journal
+  title: 'Where Consumers Diverge from Others: Identity Signaling and Product Domains'
+  author:
+  - given: Jonah
+    family: Berger
+  - given: Chip
+    family: Heath
+  container-title: Journal of Consumer Research
+  volume: '34'
+  issue: '2'
+  page: 121-134
+  DOI: 10.1086/519142
+  issued:
+    date-parts:
+    - - 2007
+- id: bhagwat2020
+  type: article-journal
+  title: Corporate Sociopolitical Activism and Firm Value
+  author:
+  - given: Yashoda
+    family: Bhagwat
+  - given: Nooshin L.
+    family: Warren
+  - given: Joshua T.
+    family: Beck
+  - given: George F.
+    family: Watson
+  container-title: Journal of Marketing
+  volume: '84'
+  issue: '5'
+  page: 1-21
+  DOI: 10.1177/0022242920937000
+  issued:
+    date-parts:
+    - - 2020
+- id: bhattacharya2003
+  type: article-journal
+  title: 'Consumer–Company Identification: A Framework for Understanding Consumers’ Relationships with
+    Companies'
+  author:
+  - given: C.B.
+    family: Bhattacharya
+  - given: Sankar
+    family: Sen
+  container-title: Journal of Marketing
+  volume: '67'
+  issue: '2'
+  page: 76-88
+  DOI: 10.1509/jmkg.67.2.76.18609
+  issued:
+    date-parts:
+    - - 2003
+- id: bourdieu1984
+  type: book
+  title: 'Distinction: A Social Critique of the Judgement of Taste'
+  author:
+  - family: Bourdieu
+    given: Pierre
+  translator:
+  - family: Nice
+    given: Richard
+  publisher: Harvard University Press
+  publisher-place: Cambridge, MA
+  issued:
+    date-parts:
+    - - 1984
+- id: chapman2009
+  type: article-journal
+  title: 'In Bad Taste: Evidence for the Oral Origins of Moral Disgust'
+  author:
+  - given: H. A.
+    family: Chapman
+  - given: D. A.
+    family: Kim
+  - given: J. M.
+    family: Susskind
+  - given: A. K.
+    family: Anderson
+  container-title: Science
+  volume: '323'
+  issue: '5918'
+  page: 1222-1226
+  DOI: 10.1126/science.1165565
+  issued:
+    date-parts:
+    - - 2009
+- id: christensen1997
+  type: book
+  title: 'The Innovator''s Dilemma: When New Technologies Cause Great Firms to Fail'
+  author:
+  - family: Christensen
+    given: Clayton M.
+  publisher: Harvard Business School Press
+  publisher-place: Boston
+  issued:
+    date-parts:
+    - - 1997
+- id: endres2017
+  type: article-journal
+  title: Boycotts, buycotts, and political consumerism in America
+  author:
+  - given: Kyle
+    family: Endres
+  - given: Costas
+    family: Panagopoulos
+  container-title: Research & Politics
+  volume: '4'
+  issue: '4'
+  DOI: 10.1177/2053168017738632
+  issued:
+    date-parts:
+    - - 2017
+- id: escalas2005
+  type: article-journal
+  title: Self‐Construal, Reference Groups, and Brand Meaning
+  author:
+  - given: Jennifer Edson
+    family: Escalas
+  - given: James R.
+    family: Bettman
+  container-title: Journal of Consumer Research
+  volume: '32'
+  issue: '3'
+  page: 378-389
+  DOI: 10.1086/497549
+  issued:
+    date-parts:
+    - - 2005
+- id: fournier1998
+  type: article-journal
+  title: 'Consumers and Their Brands: Developing Relationship Theory in Consumer Research'
+  author:
+  - given: Susan
+    family: Fournier
+  container-title: Journal of Consumer Research
+  volume: '24'
+  issue: '4'
+  page: 343-353
+  DOI: 10.1086/209515
+  issued:
+    date-parts:
+    - - 1998
+- id: friedman1999
+  type: book
+  title: 'Consumer Boycotts: Effecting Change Through the Marketplace and the Media'
+  author:
+  - family: Friedman
+    given: Monroe
+  publisher: Routledge
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1999
+- id: hainmueller2015
+  type: article-journal
+  title: 'Consumer Demand for Fair Trade: Evidence from a Multistore Field Experiment'
+  author:
+  - given: Jens
+    family: Hainmueller
+  - given: Michael J.
+    family: Hiscox
+  - given: Sandra
+    family: Sequeira
+  container-title: Review of Economics and Statistics
+  volume: '97'
+  issue: '2'
+  page: 242-256
+  DOI: 10.1162/rest_a_00467
+  issued:
+    date-parts:
+    - - 2015
+- id: hirschman1970
+  type: book
+  title: 'Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States'
+  author:
+  - family: Hirschman
+    given: Albert O.
+  publisher: Harvard University Press
+  publisher-place: Cambridge, MA
+  issued:
+    date-parts:
+    - - 1970
+- id: holt2004
+  type: book
+  title: 'How Brands Become Icons: The Principles of Cultural Branding'
+  author:
+  - family: Holt
+    given: Douglas B.
+  publisher: Harvard Business School Press
+  publisher-place: Boston
+  issued:
+    date-parts:
+    - - 2004
+- id: hydock2020
+  type: article-journal
+  title: Should Your Brand Pick a Side? How Market Share Determines the Impact of Corporate Political
+    Advocacy
+  author:
+  - given: Chris
+    family: Hydock
+  - given: Neeru
+    family: Paharia
+  - given: Sean
+    family: Blair
+  container-title: Journal of Marketing Research
+  volume: '57'
+  issue: '6'
+  page: 1135-1151
+  DOI: 10.1177/0022243720947682
+  issued:
+    date-parts:
+    - - 2020
+- id: iyengar2019
+  type: article-journal
+  title: The Origins and Consequences of Affective Polarization in the United States
+  author:
+  - given: Shanto
+    family: Iyengar
+  - given: Yphtach
+    family: Lelkes
+  - given: Matthew
+    family: Levendusky
+  - given: Neil
+    family: Malhotra
+  - given: Sean J.
+    family: Westwood
+  container-title: Annual Review of Political Science
+  volume: '22'
+  issue: '1'
+  page: 129-146
+  DOI: 10.1146/annurev-polisci-051117-073034
+  issued:
+    date-parts:
+    - - 2019
+- id: kam2020
+  type: article-journal
+  title: Boycotting, Buycotting, and the Psychology of Political Consumerism
+  author:
+  - given: Cindy D.
+    family: Kam
+  - given: Maggie
+    family: Deichert
+  container-title: The Journal of Politics
+  volume: '82'
+  issue: '1'
+  page: 72-88
+  DOI: 10.1086/705922
+  issued:
+    date-parts:
+    - - 2020
+- id: keller1993
+  type: article-journal
+  title: Conceptualizing, Measuring, and Managing Customer-Based Brand Equity
+  author:
+  - given: Kevin Lane
+    family: Keller
+  container-title: Journal of Marketing
+  volume: '57'
+  issue: '1'
+  page: 1-22
+  DOI: 10.1177/002224299305700101
+  issued:
+    date-parts:
+    - - 1993
+- id: king2008
+  type: article-journal
+  title: A Political Mediation Model of Corporate Response to Social Movement Activism
+  author:
+  - given: Brayden G
+    family: King
+  container-title: Administrative Science Quarterly
+  volume: '53'
+  issue: '3'
+  page: 395-421
+  DOI: 10.2189/asqu.53.3.395
+  issued:
+    date-parts:
+    - - 2008
+- id: klein2004
+  type: article-journal
+  title: 'Why We Boycott: Consumer Motivations for Boycott Participation'
+  author:
+  - given: Jill Gabrielle
+    family: Klein
+  - given: N. Craig
+    family: Smith
+  - given: Andrew
+    family: John
+  container-title: Journal of Marketing
+  volume: '68'
+  issue: '3'
+  page: 92-109
+  DOI: 10.1509/jmkg.68.3.92.34770
+  issued:
+    date-parts:
+    - - 2004
+- id: lancaster1966
+  type: article-journal
+  title: A New Approach to Consumer Theory
+  author:
+  - given: Kelvin J.
+    family: Lancaster
+  container-title: Journal of Political Economy
+  volume: '74'
+  issue: '2'
+  page: 132-157
+  DOI: 10.1086/259131
+  issued:
+    date-parts:
+    - - 1966
+- id: lee2006
+  type: article-journal
+  title: 'Try It, You''ll Like It: The Influence of Expectation, Consumption, and Revelation on Preferences
+    for Beer'
+  author:
+  - given: Leonard
+    family: Lee
+  - given: Shane
+    family: Frederick
+  - given: Dan
+    family: Ariely
+  container-title: Psychological Science
+  volume: '17'
+  issue: '12'
+  page: 1054-1058
+  DOI: 10.1111/j.1467-9280.2006.01829.x
+  issued:
+    date-parts:
+    - - 2006
+- id: micheletti2003
+  type: book
+  title: 'Political Virtue and Shopping: Individuals, Consumerism, and Collective Action'
+  author:
+  - family: Micheletti
+    given: Michele
+  publisher: Palgrave Macmillan
+  publisher-place: New York
+  DOI: 10.1057/9781403973764
+  issued:
+    date-parts:
+    - - 2003
+- id: mukherjee2020
+  type: article-journal
+  title: 'Brand Activism: Does Courting Controversy Help or Hurt a Brand?'
+  author:
+  - family: Mukherjee
+    given: Sourjo
+  - family: Althuizen
+    given: Niek
+  container-title: International Journal of Research in Marketing
+  volume: '37'
+  issue: '4'
+  page: 772-788
+  DOI: 10.1016/j.ijresmar.2020.02.008
+  issued:
+    date-parts:
+    - - 2020
+- id: muniz2001
+  type: article-journal
+  title: Brand Community
+  author:
+  - given: Albert M.
+    family: Muniz
+  - given: Thomas C.
+    family: O'Guinn
+  container-title: Journal of Consumer Research
+  volume: '27'
+  issue: '4'
+  page: 412-432
+  DOI: 10.1086/319618
+  issued:
+    date-parts:
+    - - 2001
+- id: neilson2010
+  type: article-journal
+  title: Boycott or buycott? Understanding political consumerism
+  author:
+  - given: Lisa A.
+    family: Neilson
+  container-title: Journal of Consumer Behaviour
+  volume: '9'
+  issue: '3'
+  page: 214-227
+  DOI: 10.1002/cb.313
+  issued:
+    date-parts:
+    - - 2010
+- id: nelson1970
+  type: article-journal
+  title: Information and Consumer Behavior
+  author:
+  - given: Phillip
+    family: Nelson
+  container-title: Journal of Political Economy
+  volume: '78'
+  issue: '2'
+  page: 311-329
+  DOI: 10.1086/259630
+  issued:
+    date-parts:
+    - - 1970
+- id: newman2011
+  type: article-journal
+  title: 'Politics at the Checkout Line: Explaining Political Consumerism in the United States'
+  author:
+  - given: Benjamin J.
+    family: Newman
+  - given: Brandon L.
+    family: Bartels
+  container-title: Political Research Quarterly
+  volume: '64'
+  issue: '4'
+  page: 803-817
+  DOI: 10.1177/1065912910379232
+  issued:
+    date-parts:
+    - - 2011
+- id: plassmann2008
+  type: article-journal
+  title: Marketing actions can modulate neural representations of experienced pleasantness
+  author:
+  - given: Hilke
+    family: Plassmann
+  - given: John
+    family: O'Doherty
+  - given: Baba
+    family: Shiv
+  - given: Antonio
+    family: Rangel
+  container-title: Proceedings of the National Academy of Sciences
+  volume: '105'
+  issue: '3'
+  page: 1050-1054
+  DOI: 10.1073/pnas.0706929105
+  issued:
+    date-parts:
+    - - 2008
+- id: reimann2010
+  type: article-journal
+  title: 'Toward an understanding of industry commoditization: Its nature and role in evolving marketing
+    competition'
+  author:
+  - given: Martin
+    family: Reimann
+  - given: Oliver
+    family: Schilke
+  - given: Jacquelyn S.
+    family: Thomas
+  container-title: International Journal of Research in Marketing
+  volume: '27'
+  issue: '2'
+  page: 188-197
+  DOI: 10.1016/j.ijresmar.2009.10.001
+  issued:
+    date-parts:
+    - - 2010
+- id: rozin1999
+  type: article-journal
+  title: The Process of Moralization
+  author:
+  - given: Paul
+    family: Rozin
+  container-title: Psychological Science
+  volume: '10'
+  issue: '3'
+  page: 218-221
+  DOI: 10.1111/1467-9280.00139
+  issued:
+    date-parts:
+    - - 1999
+- id: rozin2001
+  type: article-journal
+  title: Negativity Bias, Negativity Dominance, and Contagion
+  author:
+  - given: Paul
+    family: Rozin
+  - given: Edward B.
+    family: Royzman
+  container-title: Personality and Social Psychology Review
+  volume: '5'
+  issue: '4'
+  page: 296-320
+  DOI: 10.1207/s15327957pspr0504_2
+  issued:
+    date-parts:
+    - - 2001
+- id: rozin1986
+  type: article-journal
+  title: Operation of the laws of sympathetic magic in disgust and other domains.
+  author:
+  - given: Paul
+    family: Rozin
+  - given: Linda
+    family: Millman
+  - given: Carol
+    family: Nemeroff
+  container-title: Journal of Personality and Social Psychology
+  volume: '50'
+  issue: '4'
+  page: 703-712
+  DOI: 10.1037/0022-3514.50.4.703
+  issued:
+    date-parts:
+    - - 1986
+- id: sen2001
+  type: article-journal
+  title: 'Withholding Consumption: A Social Dilemma Perspective on Consumer Boycotts'
+  author:
+  - given: Sankar
+    family: Sen
+  - given: Zeynep
+    family: Gürhan-Canli
+  - given: Vicki
+    family: Morwitz
+  container-title: Journal of Consumer Research
+  volume: '28'
+  issue: '3'
+  page: 399-417
+  DOI: 10.1086/323729
+  issued:
+    date-parts:
+    - - 2001
+- id: stolle2005
+  type: article-journal
+  title: 'Politics in the Supermarket: Political Consumerism as a Form of Political Participation'
+  author:
+  - given: Dietlind
+    family: Stolle
+  - given: Marc
+    family: Hooghe
+  - given: Michele
+    family: Micheletti
+  container-title: International Political Science Review
+  volume: '26'
+  issue: '3'
+  page: 245-269
+  DOI: 10.1177/0192512105053784
+  issued:
+    date-parts:
+    - - 2005
+- id: tajfel1979
+  type: chapter
+  title: An Integrative Theory of Intergroup Conflict
+  author:
+  - family: Tajfel
+    given: Henri
+  - family: Turner
+    given: John C.
+  editor:
+  - family: Austin
+    given: William G.
+  - family: Worchel
+    given: Stephen
+  container-title: The Social Psychology of Intergroup Relations
+  publisher-place: Monterey, CA
+  page: 33-47
+  publisher: Brooks/Cole
+  issued:
+    date-parts:
+    - - 1979
+- id: varadarajan1988
+  type: article-journal
+  title: 'Cause-Related Marketing: A Coalignment of Marketing Strategy and Corporate Philanthropy'
+  author:
+  - given: P. Rajan
+    family: Varadarajan
+  - given: Anil
+    family: Menon
+  container-title: Journal of Marketing
+  volume: '52'
+  issue: '3'
+  page: 58-74
+  DOI: 10.1177/002224298805200306
+  issued:
+    date-parts:
+    - - 1988
+- id: veblen1899
+  type: book
+  title: 'The Theory of the Leisure Class: An Economic Study of Institutions'
+  author:
+  - family: Veblen
+    given: Thorstein
+  publisher: Macmillan
+  publisher-place: New York
+  issued:
+    date-parts:
+    - - 1899
+- id: vredenburg2020
+  type: article-journal
+  title: 'Brands Taking a Stand: Authentic Brand Activism or Woke Washing?'
+  author:
+  - family: Vredenburg
+    given: Jessica
+  - family: Kapitan
+    given: Sommer
+  - family: Spry
+    given: Amanda
+  - family: Kemper
+    given: Joya A.
+  container-title: Journal of Public Policy & Marketing
+  volume: '39'
+  issue: '4'
+  page: 444-460
+  DOI: 10.1177/0743915620947359
+  issued:
+    date-parts:
+    - - 2020

@@ -1,0 +1,584 @@
+schema: 1
+coverage: reviewed
+reviewed_manuscript_sha256: 783e5010c96f995ec6d4349c370bc7630a51764b73be57bfa8f956b9f7731e3e
+claims:
+- id: abs-n
+  kind: computation
+  passage: We build a minimal model containing both channels and a mixture parameter $\phi$, the flavoring
+    share of the political premium, and solve it for 60,000 consumers.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /params/n_consumers
+    reported: 60,000
+    units: consumers
+    conditions: model size
+    decimals: 0
+- id: abs-premium
+  kind: computation
+  passage: 'At the quality plateau the labeled market is invariant to $\phi$: choice data are identical
+    for every split, and a political premium of $0.362$ functional-quality units is consistent with any
+    $\phi$ in $[0, 1]$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /identification/political_premium_F0_units
+    reported: '0.362'
+    units: F0 units
+    conditions: plateau F_R = F_L = F0, poles +/-1, symmetric weight 0.25, 60,000 consumers, seed 60240
+    decimals: 3
+- id: abs-swing
+  kind: computation
+  passage: Only the within-good difference between blind and labeled ratings, $0.202$ per unit of $\phi$
+    for aligned consumers, identifies the split.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /identification/hedonic_swing_slope_in_phi
+    reported: '0.202'
+    units: hedonic rating per unit phi
+    conditions: plateau F_R = F_L = F0, poles +/-1, symmetric weight 0.25, 60,000 consumers, seed 60240;
+      aligned consumers
+    decimals: 3
+- id: abs-threshold
+  kind: computation
+  passage: Sweeping functional dispersion gives a threshold $\Delta F^* = 0.443$ below which politics
+    decides most contested choices; ten categories placed on this axis split into bottled water through
+    cosmetics on the flavor-dominated side and phones through medical devices on the other.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /plateau/threshold_dF_quarter_exact
+    reported: '0.443'
+    units: functional dispersion
+    conditions: asymmetric weights lambda+ = 0.15, lambda- = 0.35, phi = 1, 60,000 consumers; bisection
+    decimals: 3
+- id: abs-ratio
+  kind: computation
+  passage: With the misalignment penalty $2.33$ times the alignment bonus, a mass-market brand that adopts
+    a political position loses $0.036$ of demand, where a symmetric model predicts a gain of $0.008$;
+    adoption pays only for a base centred beyond $0.415$ toward the adopted pole.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/negativity_dominance_ratio
+    reported: '2.33'
+    units: ratio
+    conditions: stipulated weights
+    decimals: 2
+- id: abs-mass-loss
+  kind: computation
+  passage: With the misalignment penalty $2.33$ times the alignment bonus, a mass-market brand that adopts
+    a political position loses $0.036$ of demand, where a symmetric model predicts a gain of $0.008$;
+    adoption pays only for a base centred beyond $0.415$ toward the adopted pole.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/reported/mass_brand_demand_loss
+    reported: '0.036'
+    units: share of demand
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; base centred
+    decimals: 3
+- id: abs-symmetric
+  kind: computation
+  passage: With the misalignment penalty $2.33$ times the alignment bonus, a mass-market brand that adopts
+    a political position loses $0.036$ of demand, where a symmetric model predicts a gain of $0.008$;
+    adoption pays only for a base centred beyond $0.415$ toward the adopted pole.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/mass_brand_demand_change_symmetric_control
+    reported: '0.008'
+    units: share of demand
+    conditions: symmetric charge, base centred
+    decimals: 3
+- id: abs-breakeven
+  kind: computation
+  passage: With the misalignment penalty $2.33$ times the alignment bonus, a mass-market brand that adopts
+    a political position loses $0.036$ of demand, where a symmetric model predicts a gain of $0.008$;
+    adoption pays only for a base centred beyond $0.415$ toward the adopted pole.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/breakeven_base_mean_exact
+    reported: '0.415'
+    units: base mean position
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; bisection
+    decimals: 3
+- id: param-spread
+  kind: computation
+  passage: Consumer $i$ has a political position $x_i$ on a one-dimensional axis, drawn from a polarized
+    electorate in which half the population clusters near $-\mu$ and half near $+\mu$, reflecting the
+    affective sorting documented in the polarization literature [@iyengar2019]; here $\mu = 1$ and the
+    within-group spread is $0.5$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /params/sigma_x
+    reported: '0.5'
+    units: position SD
+    conditions: model parameter
+    decimals: 1
+- id: param-lam-pos
+  kind: computation
+  passage: 'The magnitudes are illustrative, anchored to published effect sizes and not estimated for
+    any market: $\lambda_{+} = 0.15$ lies in the range of the price-on-pleasantness and label-on-taste
+    shifts, and $\lambda_{-} = 0.35$ sets the contamination penalty at $2.33$ times the bonus, within
+    the band reported in the negativity-dominance literature.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /params/lam_pos
+    reported: '0.15'
+    units: F0 units
+    conditions: model parameter
+    decimals: 2
+- id: param-lam-neg
+  kind: computation
+  passage: 'The magnitudes are illustrative, anchored to published effect sizes and not estimated for
+    any market: $\lambda_{+} = 0.15$ lies in the range of the price-on-pleasantness and label-on-taste
+    shifts, and $\lambda_{-} = 0.35$ sets the contamination penalty at $2.33$ times the bonus, within
+    the band reported in the negativity-dominance literature.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /params/lam_neg
+    reported: '0.35'
+    units: F0 units
+    conditions: model parameter
+    decimals: 2
+- id: param-ratio
+  kind: computation
+  passage: 'The magnitudes are illustrative, anchored to published effect sizes and not estimated for
+    any market: $\lambda_{+} = 0.15$ lies in the range of the price-on-pleasantness and label-on-taste
+    shifts, and $\lambda_{-} = 0.35$ sets the contamination penalty at $2.33$ times the bonus, within
+    the band reported in the negativity-dominance literature.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/negativity_dominance_ratio
+    reported: '2.33'
+    units: ratio
+    conditions: stipulated weights
+    decimals: 2
+- id: param-symmetric
+  kind: computation
+  passage: To make the two goods mirror images, this study uses a symmetric political weight, $\lambda_{+}
+    = \lambda_{-} = 0.25$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /params/kappa_symmetric
+    reported: '0.25'
+    units: F0 units
+    conditions: model parameter
+    decimals: 2
+- id: share-dispersion
+  kind: computation
+  passage: Across the $\phi$ grid the market share of either good changes by $0$ to arithmetic precision,
+    and adding Gumbel choice noise leaves a residual dispersion below $0.001$, confirming that the invariance
+    does not depend on exact tie-breaking.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /identification/choice_share_dispersion_across_phi
+    reported: '0'
+    units: share
+    conditions: plateau F_R = F_L = F0, poles +/-1, symmetric weight 0.25, 60,000 consumers, seed 60240
+    decimals: 0
+- id: noise-dispersion
+  kind: computation
+  passage: Across the $\phi$ grid the market share of either good changes by $0$ to arithmetic precision,
+    and adding Gumbel choice noise leaves a residual dispersion below $0.001$, confirming that the invariance
+    does not depend on exact tie-breaking.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /monte_carlo/noisy_choice_dispersion_across_phi
+    reported: '0.001'
+    units: share
+    conditions: Gumbel noise scale 0.05, seed 60339; reported as an upper bound (0.00098)
+    decimals: 3
+- id: premium
+  kind: computation
+  passage: The political premium, the labeled willingness-to-pay gap between a consumer's better-matched
+    and worse-matched good, is $0.362$ in $F_0$ units for every $\phi$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /identification/political_premium_F0_units
+    reported: '0.362'
+    units: F0 units
+    conditions: plateau F_R = F_L = F0, poles +/-1, symmetric weight 0.25, 60,000 consumers, seed 60240
+    decimals: 3
+- id: swing
+  kind: computation
+  passage: The difference between a good's labeled and blind hedonic ratings is $F_0\,\phi\,\pi_{ij}$,
+    linear in $\phi$ through the origin; averaged over consumers whose chosen good is aligned, it runs
+    from $0$ at $\phi = 0$ to $0.202$ at $\phi = 1$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /identification/hedonic_swing_slope_in_phi
+    reported: '0.202'
+    units: hedonic rating
+    conditions: plateau F_R = F_L = F0, poles +/-1, symmetric weight 0.25, 60,000 consumers, seed 60240;
+      phi = 1
+    decimals: 3
+- id: plateau-share
+  kind: computation
+  passage: At $\Delta F = 0$ the politics-determined share is $0.501$, the half of the electorate aligned
+    to $L$; it falls as the quality gap widens and $L$-aligned consumers switch to the better good.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /plateau/plateau_politics_determined_share
+    reported: '0.501'
+    units: share of consumers
+    conditions: asymmetric weights lambda+ = 0.15, lambda- = 0.35, phi = 1, 60,000 consumers
+    decimals: 3
+- id: threshold
+  kind: computation
+  passage: The share falls below one quarter of the market, half of the politically susceptible subpopulation,
+    at $\Delta F^{*} = 0.443$ (located by bisection; the grid of step $0.005$ gives $0.445$).
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /plateau/threshold_dF_quarter_exact
+    reported: '0.443'
+    units: functional dispersion
+    conditions: asymmetric weights lambda+ = 0.15, lambda- = 0.35, phi = 1, 60,000 consumers; bisection
+    decimals: 3
+- id: threshold-grid
+  kind: computation
+  passage: The share falls below one quarter of the market, half of the politically susceptible subpopulation,
+    at $\Delta F^{*} = 0.443$ (located by bisection; the grid of step $0.005$ gives $0.445$).
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /plateau/threshold_dF_quarter
+    reported: '0.445'
+    units: functional dispersion
+    conditions: asymmetric weights lambda+ = 0.15, lambda- = 0.35, phi = 1, 60,000 consumers; 0.005 grid
+    decimals: 3
+- id: water-share
+  kind: computation
+  passage: Bottled water ($\Delta F = 0.03$, politics-determined share $0.497$), beer, coffee, fashion
+    basics, and cosmetics ($0.20$, share $0.459$) lie on the flavor-dominated side; phones ($0.48$, share
+    $0.110$), cars, televisions, industrial tools, and medical devices ($0.78$, share $0.000$) lie on
+    the other (Figure 2).
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /plateau/categories/0/politics_determined_share
+    reported: '0.497'
+    units: share
+    conditions: asymmetric weights lambda+ = 0.15, lambda- = 0.35, phi = 1, 60,000 consumers; stipulated
+      ordinal category dispersions
+    decimals: 3
+- id: cosmetics-share
+  kind: computation
+  passage: Bottled water ($\Delta F = 0.03$, politics-determined share $0.497$), beer, coffee, fashion
+    basics, and cosmetics ($0.20$, share $0.459$) lie on the flavor-dominated side; phones ($0.48$, share
+    $0.110$), cars, televisions, industrial tools, and medical devices ($0.78$, share $0.000$) lie on
+    the other (Figure 2).
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /plateau/categories/4/politics_determined_share
+    reported: '0.459'
+    units: share
+    conditions: asymmetric weights lambda+ = 0.15, lambda- = 0.35, phi = 1, 60,000 consumers; stipulated
+      ordinal category dispersions
+    decimals: 3
+- id: phones-share
+  kind: computation
+  passage: Bottled water ($\Delta F = 0.03$, politics-determined share $0.497$), beer, coffee, fashion
+    basics, and cosmetics ($0.20$, share $0.459$) lie on the flavor-dominated side; phones ($0.48$, share
+    $0.110$), cars, televisions, industrial tools, and medical devices ($0.78$, share $0.000$) lie on
+    the other (Figure 2).
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /plateau/categories/5/politics_determined_share
+    reported: '0.110'
+    units: share
+    conditions: asymmetric weights lambda+ = 0.15, lambda- = 0.35, phi = 1, 60,000 consumers; stipulated
+      ordinal category dispersions
+    decimals: 3
+- id: medical-share
+  kind: computation
+  passage: Bottled water ($\Delta F = 0.03$, politics-determined share $0.497$), beer, coffee, fashion
+    basics, and cosmetics ($0.20$, share $0.459$) lie on the flavor-dominated side; phones ($0.48$, share
+    $0.110$), cars, televisions, industrial tools, and medical devices ($0.78$, share $0.000$) lie on
+    the other (Figure 2).
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /plateau/categories/9/politics_determined_share
+    reported: '0.000'
+    units: share
+    conditions: asymmetric weights lambda+ = 0.15, lambda- = 0.35, phi = 1, 60,000 consumers; stipulated
+      ordinal category dispersions
+    decimals: 3
+- id: mass-loss
+  kind: computation
+  passage: 'For a mass-market brand, whose base is centred on the electorate, adoption is a loss: demand
+    falls by $0.036$.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/reported/mass_brand_demand_loss
+    reported: '0.036'
+    units: share of demand
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; base centred
+    decimals: 3
+- id: symmetric-gain
+  kind: computation
+  passage: With a symmetric charge, $\lambda_{-} = \lambda_{+}$, the same centred brand gains $0.008$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/mass_brand_demand_change_symmetric_control
+    reported: '0.008'
+    units: share of demand
+    conditions: symmetric charge, base centred
+    decimals: 3
+- id: breakeven
+  kind: computation
+  passage: 'Adoption pays only for a base already concentrated toward the adopted pole: the demand change
+    crosses zero at a base mean of $0.415$ (bisection; the $0.025$ grid gives $0.425$), so brands whose
+    customers lie beyond that point gain and broader brands lose.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/breakeven_base_mean_exact
+    reported: '0.415'
+    units: base mean position
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; bisection
+    decimals: 3
+- id: breakeven-grid
+  kind: computation
+  passage: 'Adoption pays only for a base already concentrated toward the adopted pole: the demand change
+    crosses zero at a base mean of $0.415$ (bisection; the $0.025$ grid gives $0.425$), so brands whose
+    customers lie beyond that point gain and broader brands lose.'
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/breakeven_base_mean
+    reported: '0.425'
+    units: base mean position
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; 0.025 grid
+    decimals: 3
+- id: niche-gain
+  kind: computation
+  passage: A challenger whose base sits at the pole gains $0.021$, and a brand that adopts the pole opposite
+    its base loses $0.138$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/reported/niche_aligned_demand_change
+    reported: '0.021'
+    units: share of demand
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; base at +1
+    decimals: 3
+- id: opposed-loss
+  kind: computation
+  passage: A challenger whose base sits at the pole gains $0.021$, and a brand that adopts the pole opposite
+    its base loses $0.138$.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /asymmetry/reported/niche_opposed_demand_loss
+    reported: '0.138'
+    units: share of demand
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; base at -1
+    decimals: 3
+- id: sens-change-1
+  kind: computation
+  passage: As the ratio rises from $1.0$ to $4.0$, the centred brand's demand change falls from $+0.008$
+    to $-0.101$, and the break-even base mean rises from $-0.152$ to beyond $1.5$, the upper limit of
+    the scanned range, so that under strong contamination no broad brand can adopt a position profitably.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /sensitivity/by_negativity_ratio/0/mass_brand_demand_change
+    reported: '+0.008'
+    units: share of demand
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; negativity-dominance ratio sweep, ratio 1
+    decimals: 3
+- id: sens-change-4
+  kind: computation
+  passage: As the ratio rises from $1.0$ to $4.0$, the centred brand's demand change falls from $+0.008$
+    to $-0.101$, and the break-even base mean rises from $-0.152$ to beyond $1.5$, the upper limit of
+    the scanned range, so that under strong contamination no broad brand can adopt a position profitably.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /sensitivity/by_negativity_ratio/5/mass_brand_demand_change
+    reported: '-0.101'
+    units: share of demand
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; negativity-dominance ratio sweep, ratio 4
+    decimals: 3
+- id: sens-breakeven-1
+  kind: computation
+  passage: As the ratio rises from $1.0$ to $4.0$, the centred brand's demand change falls from $+0.008$
+    to $-0.101$, and the break-even base mean rises from $-0.152$ to beyond $1.5$, the upper limit of
+    the scanned range, so that under strong contamination no broad brand can adopt a position profitably.
+  evidence:
+    file: simulation/output/results.json
+    run_id: flavoring
+    pointer: /sensitivity/by_negativity_ratio/0/breakeven_base_mean_exact
+    reported: '-0.152'
+    units: base mean position
+    conditions: neutral brand adopts +1 pole; lambda+ = 0.15, lambda- = 0.35; logit purchase, base spread
+      0.7; negativity-dominance ratio sweep, ratio 1
+    decimals: 3
+- id: plassmann-price
+  kind: source
+  passage: Subjects told that a wine is more expensive rate it as more pleasant and show higher activity
+    in orbitofrontal regions that encode experienced pleasantness, with the wine held fixed [@plassmann2008].
+  evidence:
+    citation_id: plassmann2008
+    locator: Abstract
+    verified: true
+    verification_note: 'DOI 10.1073/pnas.0706929105; Crossref abstract: raising the stated price of a
+      wine increases reported flavour pleasantness and BOLD activity in medial orbitofrontal cortex.'
+- id: lee-beer
+  kind: source
+  passage: Subjects told before tasting that a beer contains a distinctive additive like it less, while
+    subjects told afterwards do not, so the expectation moves the verdict independently of the chemistry
+    [@lee2006].
+  evidence:
+    citation_id: lee2006
+    locator: Abstract
+    verified: true
+    verification_note: 'DOI 10.1111/j.1467-9280.2006.01829.x; Crossref abstract: disclosing the added
+      vinegar reduced preference only when disclosure preceded tasting, so expectation affected the experience
+      itself.'
+- id: chapman-disgust
+  kind: source
+  passage: 'The route by which a price cue enters a taste can carry a political cue in the same way, and
+    moral psychology supplies the second half of that route: moral judgment recruits the machinery of
+    physical disgust, so a moralized object can be experienced as contaminated in addition to being disapproved
+    of [@chapman2009; @rozin1999].'
+  evidence:
+    citation_id: chapman2009
+    locator: Abstract
+    verified: true
+    verification_note: 'DOI 10.1126/science.1165565; Crossref abstract: gustatory distaste, basic disgust
+      and moral disgust (unfair treatment) all activate the levator labii region, so immorality elicits
+      the same disgust as bad tastes.'
+- id: rozin-negativity
+  kind: source
+  passage: Negativity dominance is the regularity that combining a negative element with a positive one
+    yields an outcome more negative than the parts predict, most pronounced in contagion, where a drop
+    of sewage spoils a barrel of wine and a drop of wine does nothing for a barrel of sewage [@rozin2001;
+    @baumeister2001].
+  evidence:
+    citation_id: rozin2001
+    locator: Abstract
+    verified: true
+    verification_note: DOI 10.1207/S15327957PSPR0504_2; Crossref abstract defines negativity dominance
+      as combinations of negative and positive entities yielding evaluations more negative than the algebraic
+      sum, with emphasis on contagion.
+- id: hydock-share
+  kind: source
+  passage: 'Applied to consumption, it predicts that political misalignment spoils a good more than alignment
+    improves it, and the marketing evidence agrees: disagreement with a brand''s stance damages attitudes
+    more than agreement repairs them [@mukherjee2020], and divisive stances are riskier for brands with
+    more to lose [@hydock2020].'
+  evidence:
+    citation_id: hydock2020
+    locator: Abstract
+    verified: true
+    verification_note: 'DOI 10.1177/0022243720947682 (Journal of Marketing Research 57(6)); Crossref abstract:
+      corporate political advocacy repels opposing customers more than it attracts supporters and hurts
+      large-share brands while benefiting small-share brands.'
+- id: hainmueller-fair-trade
+  kind: source
+  passage: Ethical labels of this kind move real purchases as well as stated attitudes, as a multistore
+    field experiment on fair-trade coffee showed [@hainmueller2015].
+  evidence:
+    citation_id: hainmueller2015
+    locator: Abstract
+    verified: true
+    verification_note: 'DOI 10.1162/REST_a_00467; Crossref abstract: in grocery-store experiments sales
+      of the two most popular coffees rose almost 10% with a Fair Trade label relative to a placebo label.'
+- id: kam-boycott-buycott
+  kind: source
+  passage: A large literature treats buying and boycotting as political participation [@stolle2005; @micheletti2003],
+    measures its prevalence and its participants [@newman2011; @endres2017], distinguishes the approach
+    motive of the buycott from the avoidance motive of the boycott [@neilson2010; @kam2020], and asks
+    when a firm's public stance helps or hurts it [@vredenburg2020; @bhagwat2020].
+  evidence:
+    citation_id: kam2020
+    locator: Abstract
+    verified: true
+    verification_note: 'DOI 10.1086/705922; Crossref abstract: boycotting and buycotting are framed as
+      avoidance and approach, and negative information is far more powerful in inducing boycotts than
+      positive information is in inducing buycotts.'
+- id: sorting-definition
+  kind: definition
+  passage: We call this sorting, because it sorts buyers across goods without altering the goods.
+  rationale: Defines the first channel.
+- id: flavoring-definition
+  kind: definition
+  passage: We call this flavoring.
+  rationale: Defines the second channel.
+- id: phi-definition
+  kind: definition
+  passage: The mixture parameter $\phi \in [0, 1]$ is the share of the political charge that runs through
+    flavoring.
+  rationale: Defines the quantity whose identification is at issue.
+- id: illustrative-magnitudes
+  kind: assumption
+  passage: 'The magnitudes are illustrative, anchored to published effect sizes and not estimated for
+    any market: $\lambda_{+} = 0.15$ lies in the range of the price-on-pleasantness and label-on-taste
+    shifts, and $\lambda_{-} = 0.35$ sets the contamination penalty at $2.33$ times the bonus, within
+    the band reported in the negativity-dominance literature.'
+  rationale: All parameters are stipulated; results are properties of the parameterization.
+- id: plateau-invariance
+  kind: interpretation
+  passage: which does not contain $\phi$.
+  rationale: Analytic result at F_R = F_L = F0; confirmed numerically by zero share dispersion across
+    the phi grid.
+- id: identification-only-blind
+  kind: interpretation
+  passage: No market statistic recovers it, because a market never serves the same good to the same buyer
+    under two labels and records the hedonic difference.
+  rationale: 'Negative identification result: only a within-good blind-versus-labeled rating identifies
+    phi.'
+- id: ordinal-categories
+  kind: assumption
+  passage: The category dispersions are ordinal stipulations, so the partition shows that a single threshold
+    can generate the received ordering; it does not establish that the dispersion of bottled water is
+    $0.03$.
+  rationale: Category placements are stipulated; the partition shows only that one threshold can reproduce
+    the received ordering.
+- id: activism-asymmetry
+  kind: interpretation
+  passage: The loss is due entirely to the asymmetry.
+  rationale: Comparison of the asymmetric and symmetric control results bound above.
+- id: public-cases
+  kind: interpretation
+  passage: The model supplies no verdict on these cases; it provides a vocabulary that keeps symbolic
+    and material pressure distinct.
+  rationale: The public cases in Section 5 are interpretive applications, not tests.
+- id: no-fraud
+  kind: normative
+  passage: Flavoring does not imply fraud or false consciousness.
+  rationale: Normative scope statement.
+runs:
+- id: flavoring
+  required: true
+  record: verification/flavoring.json

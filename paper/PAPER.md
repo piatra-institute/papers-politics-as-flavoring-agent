@@ -14,25 +14,25 @@ Consumers who will not switch phones over a manufacturer's politics often switch
 
 A person who would not change a phone, a car, or a washing machine over the maker's politics will drop a beer, a coffee, or a razor for much less, and the difference is usually attributed to price: the cheap item is easy to abandon and the expensive one is not. The same person, however, keeps the cheap items they like and abandons the cheap items that politics has touched, so price cannot account for the pattern. The phones available to the buyer differ on dimensions the buyer can perceive, and beers within a price tier do not. Where products have converged, the buyer has spare capacity to care about attributes other than function, and politics is the most available such attribute.
 
-The claim concerns where political meaning lands in consumption; it does not assert that political consumption is new or that consumers are deceived. A large literature treats buying and boycotting as political participation (Stolle, Hooghe and Micheletti, 2005; Micheletti, 2003), measures its prevalence and its participants (Newman and Bartels, 2011; Endres and Panagopoulos, 2017), distinguishes the approach motive of the buycott from the avoidance motive of the boycott (Neilson, 2010; Kam and Deichert, 2020), and asks when a firm's public stance helps or hurts it (Vredenburg, Kapitan, Spry and Kemper, 2020; Bhagwat, Warren, Beck and Watson, 2020). In that literature the boycott is the consumer's exit, the cheapest channel of pressure when voice is costly and a substitute is available (Hirschman, 1970), and politics is a reason to act. The present question is narrower: when a consumer reports that the aligned beer is better, what does "better" measure, and can market data determine it?
+The claim concerns where political meaning lands in consumption; it does not assert that political consumption is new or that consumers are deceived. A large literature treats buying and boycotting as political participation [@stolle2005; @micheletti2003], measures its prevalence and its participants [@newman2011; @endres2017], distinguishes the approach motive of the buycott from the avoidance motive of the boycott [@neilson2010; @kam2020], and asks when a firm's public stance helps or hurts it [@vredenburg2020; @bhagwat2020]. In that literature the boycott is the consumer's exit, the cheapest channel of pressure when voice is costly and a substitute is available [@hirschman1970], and politics is a reason to act. The present question is narrower: when a consumer reports that the aligned beer is better, what does "better" measure, and can market data determine it?
 
 Two answers are available, and they are usually conflated. In the first, politics is a preference over an attribute, comparable to sweetness or a logo; the aligned beer wins the choice but tastes the same, and the consumer would say so under questioning. We call this sorting, because it sorts buyers across goods without altering the goods. In the second, politics has entered the taste, so the aligned beer is experienced as better in addition to being chosen. We call this flavoring. The two channels describe different facts that generate the same market, and Section 4 shows that market data from one market cannot separate them.
 
 ## 2. Background: Expectation, Contamination, and Credence Goods
 
-That goods carry meaning beyond function is among the oldest observations in the study of consumption, from conspicuous waste as a status display (Veblen, 1899) through taste as a marker of social position (Bourdieu, 1984) to the brand as a vessel of cultural myth (Holt, 2004). Politics is a recent entrant into that symbolic layer and continuous with it. The additional claim is that political meaning can extend from the layer of signification into the layer of experience.
+That goods carry meaning beyond function is among the oldest observations in the study of consumption, from conspicuous waste as a status display [@veblen1899] through taste as a marker of social position [@bourdieu1984] to the brand as a vessel of cultural myth [@holt2004]. Politics is a recent entrant into that symbolic layer and continuous with it. The additional claim is that political meaning can extend from the layer of signification into the layer of experience.
 
-Beliefs about a product change the experience of consuming it, as measured both by report and by brain activity. Subjects told that a wine is more expensive rate it as more pleasant and show higher activity in orbitofrontal regions that encode experienced pleasantness, with the wine held fixed (Plassmann, O'Doherty, Shiv and Rangel, 2008). Subjects told before tasting that a beer contains a distinctive additive like it less, while subjects told afterwards do not, so the expectation moves the verdict independently of the chemistry (Lee, Frederick and Ariely, 2006). The route by which a price cue enters a taste can carry a political cue in the same way, and moral psychology supplies the second half of that route: moral judgment recruits the machinery of physical disgust, so a moralized object can be experienced as contaminated in addition to being disapproved of (Chapman, Kim, Susskind and Anderson, 2009; Rozin, 1999). Contamination follows the laws of sympathetic magic, under which contact with a tainted source transfers the taint to a physically unchanged object (Rozin, Millman and Nemeroff, 1986). A beer can acquire a political taint in the sense in which a glass is spoiled by a cockroach that briefly sat in it.
+Beliefs about a product change the experience of consuming it, as measured both by report and by brain activity. Subjects told that a wine is more expensive rate it as more pleasant and show higher activity in orbitofrontal regions that encode experienced pleasantness, with the wine held fixed [@plassmann2008]. Subjects told before tasting that a beer contains a distinctive additive like it less, while subjects told afterwards do not, so the expectation moves the verdict independently of the chemistry [@lee2006]. The route by which a price cue enters a taste can carry a political cue in the same way, and moral psychology supplies the second half of that route: moral judgment recruits the machinery of physical disgust, so a moralized object can be experienced as contaminated in addition to being disapproved of [@chapman2009; @rozin1999]. Contamination follows the laws of sympathetic magic, under which contact with a tainted source transfers the taint to a physically unchanged object [@rozin1986]. A beer can acquire a political taint in the sense in which a glass is spoiled by a cockroach that briefly sat in it.
 
-The contamination half of the route is stronger than the endorsement half. Negativity dominance is the regularity that combining a negative element with a positive one yields an outcome more negative than the parts predict, most pronounced in contagion, where a drop of sewage spoils a barrel of wine and a drop of wine does nothing for a barrel of sewage (Rozin and Royzman, 2001; Baumeister, Bratslavsky, Finkenauer and Vohs, 2001). Applied to consumption, it predicts that political misalignment spoils a good more than alignment improves it, and the marketing evidence agrees: disagreement with a brand's stance damages attitudes more than agreement repairs them (Mukherjee and Althuizen, 2020), and divisive stances are riskier for brands with more to lose (Hydock, Paharia and Blair, 2020). The model in Section 3 encodes the asymmetry as a single ratio and derives these findings from it.
+The contamination half of the route is stronger than the endorsement half. Negativity dominance is the regularity that combining a negative element with a positive one yields an outcome more negative than the parts predict, most pronounced in contagion, where a drop of sewage spoils a barrel of wine and a drop of wine does nothing for a barrel of sewage [@rozin2001; @baumeister2001]. Applied to consumption, it predicts that political misalignment spoils a good more than alignment improves it, and the marketing evidence agrees: disagreement with a brand's stance damages attitudes more than agreement repairs them [@mukherjee2020], and divisive stances are riskier for brands with more to lose [@hydock2020]. The model in Section 3 encodes the asymmetry as a single ratio and derives these findings from it.
 
-Politics enters here as a credence quality, a property the buyer cannot verify even after consumption, the class of attribute that the economics of information has studied since the analysis of uncertain and unobservable quality (Akerlof, 1970; Nelson, 1970). Ethical labels of this kind move real purchases as well as stated attitudes, as a multistore field experiment on fair-trade coffee showed (Hainmueller, Hiscox and Sequeira, 2015). The flavoring channel operates upstream of the purchase: the credence claim can re-enter as taste in addition to tipping the choice. It is therefore distinct from cause-related marketing, in which a purchase funds a cause (Varadarajan and Menon, 1988), and from commodity activism, in which resistance is routed through consumption (Banet-Weiser, 2012); both change the meaning of buying, and neither claims to change how the good tastes.
+Politics enters here as a credence quality, a property the buyer cannot verify even after consumption, the class of attribute that the economics of information has studied since the analysis of uncertain and unobservable quality [@akerlof1970; @nelson1970]. Ethical labels of this kind move real purchases as well as stated attitudes, as a multistore field experiment on fair-trade coffee showed [@hainmueller2015]. The flavoring channel operates upstream of the purchase: the credence claim can re-enter as taste in addition to tipping the choice. It is therefore distinct from cause-related marketing, in which a purchase funds a cause [@varadarajan1988], and from commodity activism, in which resistance is routed through consumption [@banetweiser2012]; both change the meaning of buying, and neither claims to change how the good tastes.
 
 Flavoring is therefore plausible and asymmetric, but it is invisible in the data economists usually examine. Revealed preference reads choices, and a choice records that the aligned beer won without recording whether it won as a preferred attribute or as a better-tasting good. Stated satisfaction does not separate the two, because a satisfied buyer may be reporting the pleasure of the taste or the pleasure of the alignment. The separation requires a measurement the market does not make: the same physical good rated once with its label and once without. Expectation experiments make that measurement, and Section 4 shows that it is the only measurement that identifies the mechanism.
 
 ## 3. Model
 
-A category contains substitutable goods. Consumer $i$ has a political position $x_i$ on a one-dimensional axis, drawn from a polarized electorate in which half the population clusters near $-\mu$ and half near $+\mu$, reflecting the affective sorting documented in the polarization literature (Iyengar, Lelkes, Levendusky, Malhotra and Westwood, 2019); here $\mu = 1$ and the within-group spread is $0.5$. Good $j$ has functional quality $F_j$ and, if politicized, a position $p_j$. Alignment between a consumer and a good is the Gaussian kernel
+A category contains substitutable goods. Consumer $i$ has a political position $x_i$ on a one-dimensional axis, drawn from a polarized electorate in which half the population clusters near $-\mu$ and half near $+\mu$, reflecting the affective sorting documented in the polarization literature [@iyengar2019]; here $\mu = 1$ and the within-group spread is $0.5$. Good $j$ has functional quality $F_j$ and, if politicized, a position $p_j$. Alignment between a consumer and a good is the Gaussian kernel
 
 $$a_{ij} = \exp\!\left(-\frac{(x_i - p_j)^2}{2\tau^2}\right) \in (0, 1],$$
 
@@ -42,7 +42,7 @@ $$\pi_{ij} = \lambda_{+}\, a_{ij} - \lambda_{-}\,(1 - a_{ij}),$$
 
 with $\lambda_{-} \ge \lambda_{+}$ encoding negativity dominance. A fully aligned consumer receives $\pi = \lambda_{+}$ and a fully misaligned one $\pi = -\lambda_{-}$. The magnitudes are illustrative, anchored to published effect sizes and not estimated for any market: $\lambda_{+} = 0.15$ lies in the range of the price-on-pleasantness and label-on-taste shifts, and $\lambda_{-} = 0.35$ sets the contamination penalty at $2.33$ times the bonus, within the band reported in the negativity-dominance literature.
 
-The two channels differ in where $\pi$ enters. Under sorting it is expressive: it enters the utility that drives choice and leaves the hedonic quality the consumer would report for the good in hand unchanged. This is the orthodox reading and it is well founded: identity is a standard argument of the utility function (Akerlof and Kranton, 2000), a good is a bundle of characteristics of which politics can be one (Lancaster, 1966), and brands hold knowledge and relationships that drive differential response (Keller, 1993; Fournier, 1998) and serve as material for the self and its reference groups (Escalas and Bettman, 2005; Bhattacharya and Sen, 2003; Tajfel and Turner, 1979). Under flavoring $\pi$ is hedonic: it multiplies experienced quality, so the good is tasted as $F_j(1 + \pi_{ij})$. The mixture parameter $\phi \in [0, 1]$ is the share of the political charge that runs through flavoring. Labeled total utility, the quantity maximized in choice, is
+The two channels differ in where $\pi$ enters. Under sorting it is expressive: it enters the utility that drives choice and leaves the hedonic quality the consumer would report for the good in hand unchanged. This is the orthodox reading and it is well founded: identity is a standard argument of the utility function [@akerlof2000], a good is a bundle of characteristics of which politics can be one [@lancaster1966], and brands hold knowledge and relationships that drive differential response [@keller1993; @fournier1998] and serve as material for the self and its reference groups [@escalas2005; @bhattacharya2003; @tajfel1979]. Under flavoring $\pi$ is hedonic: it multiplies experienced quality, so the good is tasted as $F_j(1 + \pi_{ij})$. The mixture parameter $\phi \in [0, 1]$ is the share of the political charge that runs through flavoring. Labeled total utility, the quantity maximized in choice, is
 
 $$U^{\text{lab}}_{ij} = F_j + \pi_{ij}\,\big(\phi F_j + (1 - \phi) F_0\big),$$
 
@@ -76,7 +76,7 @@ Placing categories on the $\Delta F$ axis converts the threshold into a suscepti
 
 ![Politics-determined choice share against functional dispersion $\Delta F$. The share falls from about $0.50$ at the plateau to zero once quality differences are large, crossing one quarter at $\Delta F^{*} = 0.443$ (dashed). Ten categories are placed at stipulated, ordinal dispersions; the five below the threshold are flavor-dominated (red) and the five above it function-dominated (green).](../simulation/output/figures/plateau.png){width=100%}
 
-The threshold gives a mechanism to a condition that the marketing literature names qualitatively. Commoditization is described as a drift toward homogeneity, price sensitivity, and low switching cost (Reimann, Schilke and Thomas, 2010), and the good-enough plateau is the point at which product improvement overshoots what buyers can use (Christensen, 1997); the model expresses that point as the dispersion $\Delta F^{*}$ at which politics changes from a tiebreaker into the deciding factor. Visibility belongs on the same axis, since identity-relevant goods are those consumed in public, where others can read the label (Berger and Heath, 2007); an extended model would let visibility shift the threshold.
+The threshold gives a mechanism to a condition that the marketing literature names qualitatively. Commoditization is described as a drift toward homogeneity, price sensitivity, and low switching cost [@reimann2010], and the good-enough plateau is the point at which product improvement overshoots what buyers can use [@christensen1997]; the model expresses that point as the dispersion $\Delta F^{*}$ at which politics changes from a tiebreaker into the deciding factor. Visibility belongs on the same axis, since identity-relevant goods are those consumed in public, where others can read the label [@berger2007]; an extended model would let visibility shift the threshold.
 
 The threshold also limits the scope of the theory. Politics can modify the experience of a good but cannot substitute for its function. A category with real, perceptible performance gaps does not become politically flavorable through campaigning, because a buyer who can perceive the difference chooses on it. The plateau is a precondition, and the model expresses it as a number.
 
@@ -94,7 +94,7 @@ The size of the penalty tracks the negativity-dominance ratio. As the ratio rise
 
 The model sorts public cases along two axes, sorting versus flavoring and discipline versus ritual. Bud Light is the clearest instance of the activism result: a commodity at the plateau, a centred mass-market base, a stance toward one pole, and a collapse made costless for boycotters by substitution, since the alienated half had many interchangeable lagers available. Nike and Kaepernick is the mirror case. The base of an apparel brand already concentrated among younger urban consumers was not centred, so the manoeuvre that damaged a centred beer brand consolidated a polarized shoe brand, as the break-even result predicts for a base beyond the threshold.
 
-The discipline-versus-ritual axis separates boycotts that function as flavoring rituals from those with a material object, a distinction the boycott literature draws from several directions: participant motivation (Klein, Smith and John, 2004), the social dilemma of withholding consumption (Sen, Gürhan-Canli and Morwitz, 2001), media leverage as distinct from lost revenue (Friedman, 1999), and the conditions under which firms respond (King, 2008). The Israel-related consumer boycotts of fast-food and coffee chains operate largely through symbolic association and local franchise actions, with little supply-chain involvement, in categories the plateau result marks as flavorable, and their effect concentrates where ideological alignment is densest. This is the signature of an identity ritual that stabilizes a group, a brand community defined as much by what it refuses as by what it buys (Muniz and O'Guinn, 2001), and it differs from a sanction that changes a firm's behaviour. The corporate exits from Russia lie at the other end: the object was material, the cost to firms was a balance-sheet write-down with no consumer substitution involved, and the pressure operated on producers' accounts, so the flavoring model does not apply. Ben and Jerry's occupies the contested middle: an actual distribution policy in occupied territory, a material object, was carried by a brand whose politics was already a core ingredient of its identity, and the dispute accordingly reached corporate governance in addition to the checkout. The model supplies no verdict on these cases; it provides a vocabulary that keeps symbolic and material pressure distinct.
+The discipline-versus-ritual axis separates boycotts that function as flavoring rituals from those with a material object, a distinction the boycott literature draws from several directions: participant motivation [@klein2004], the social dilemma of withholding consumption [@sen2001], media leverage as distinct from lost revenue [@friedman1999], and the conditions under which firms respond [@king2008]. The Israel-related consumer boycotts of fast-food and coffee chains operate largely through symbolic association and local franchise actions, with little supply-chain involvement, in categories the plateau result marks as flavorable, and their effect concentrates where ideological alignment is densest. This is the signature of an identity ritual that stabilizes a group, a brand community defined as much by what it refuses as by what it buys [@muniz2001], and it differs from a sanction that changes a firm's behaviour. The corporate exits from Russia lie at the other end: the object was material, the cost to firms was a balance-sheet write-down with no consumer substitution involved, and the pressure operated on producers' accounts, so the flavoring model does not apply. Ben and Jerry's occupies the contested middle: an actual distribution policy in occupied territory, a material object, was carried by a brand whose politics was already a core ingredient of its identity, and the dispute accordingly reached corporate governance in addition to the checkout. The model supplies no verdict on these cases; it provides a vocabulary that keeps symbolic and material pressure distinct.
 
 ## 6. Limitations
 
@@ -111,87 +111,3 @@ The claim that politics has become part of what consumers buy is true and, as us
 All modelled numbers are produced by `simulation/run_all.py` (population seed 60240, 60,000 consumers), which writes `simulation/output/results.json` and the three figures. Thresholds and break-even points are reported from bisection refinements (`*_exact` fields), with the original grid values retained.
 
 ## References
-
-Akerlof, G. A. (1970). The market for lemons: Quality uncertainty and the market mechanism. *Quarterly Journal of Economics*, 84(3), 488–500.
-
-Akerlof, G. A., and Kranton, R. E. (2000). Economics and identity. *Quarterly Journal of Economics*, 115(3), 715–753.
-
-Banet-Weiser, S. (2012). *Authentic™: The Politics of Ambivalence in a Brand Culture*. New York University Press.
-
-Baumeister, R. F., Bratslavsky, E., Finkenauer, C., and Vohs, K. D. (2001). Bad is stronger than good. *Review of General Psychology*, 5(4), 323–370.
-
-Berger, J., and Heath, C. (2007). Where consumers diverge from others: Identity signaling and product domains. *Journal of Consumer Research*, 34(2), 121–134.
-
-Bhagwat, Y., Warren, N. L., Beck, J. T., and Watson, G. F. (2020). Corporate sociopolitical activism and firm value. *Journal of Marketing*, 84(5), 1–21.
-
-Bhattacharya, C. B., and Sen, S. (2003). Consumer-company identification: A framework for understanding consumers' relationships with companies. *Journal of Marketing*, 67(2), 76–88.
-
-Bourdieu, P. (1984). *Distinction: A Social Critique of the Judgement of Taste* (R. Nice, Trans.). Harvard University Press.
-
-Chapman, H. A., Kim, D. A., Susskind, J. M., and Anderson, A. K. (2009). In bad taste: Evidence for the oral origins of moral disgust. *Science*, 323(5918), 1222–1226.
-
-Christensen, C. M. (1997). *The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail*. Harvard Business School Press.
-
-Endres, K., and Panagopoulos, C. (2017). Boycotts, buycotts, and political consumerism in America. *Research & Politics*, 4(4), 1–9.
-
-Escalas, J. E., and Bettman, J. R. (2005). Self-construal, reference groups, and brand meaning. *Journal of Consumer Research*, 32(3), 378–389.
-
-Fournier, S. (1998). Consumers and their brands: Developing relationship theory in consumer research. *Journal of Consumer Research*, 24(4), 343–373.
-
-Friedman, M. (1999). *Consumer Boycotts: Effecting Change Through the Marketplace and the Media*. Routledge.
-
-Hainmueller, J., Hiscox, M. J., and Sequeira, S. (2015). Consumer demand for fair trade: Evidence from a multistore field experiment. *Review of Economics and Statistics*, 97(2), 242–256.
-
-Hirschman, A. O. (1970). *Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and States*. Harvard University Press.
-
-Holt, D. B. (2004). *How Brands Become Icons: The Principles of Cultural Branding*. Harvard Business School Press.
-
-Hydock, C., Paharia, N., and Blair, S. (2020). Should your brand pick a side? How market share determines the impact of corporate political advocacy. *Journal of Marketing Research*, 57(6), 1135–1151.
-
-Iyengar, S., Lelkes, Y., Levendusky, M., Malhotra, N., and Westwood, S. J. (2019). The origins and consequences of affective polarization in the United States. *Annual Review of Political Science*, 22, 129–146.
-
-Kam, C. D., and Deichert, M. (2020). Boycotting, buycotting, and the psychology of political consumerism. *Journal of Politics*, 82(1), 72–88.
-
-Keller, K. L. (1993). Conceptualizing, measuring, and managing customer-based brand equity. *Journal of Marketing*, 57(1), 1–22.
-
-King, B. G. (2008). A political mediation model of corporate response to social movement activism. *Administrative Science Quarterly*, 53(3), 395–421.
-
-Klein, J. G., Smith, N. C., and John, A. (2004). Why we boycott: Consumer motivations for boycott participation. *Journal of Marketing*, 68(3), 92–109.
-
-Lancaster, K. J. (1966). A new approach to consumer theory. *Journal of Political Economy*, 74(2), 132–157.
-
-Lee, L., Frederick, S., and Ariely, D. (2006). Try it, you'll like it: The influence of expectation, consumption, and revelation on preferences for beer. *Psychological Science*, 17(12), 1054–1058.
-
-Micheletti, M. (2003). *Political Virtue and Shopping: Individuals, Consumerism, and Collective Action*. Palgrave Macmillan.
-
-Mukherjee, S., and Althuizen, N. (2020). Brand activism: Does courting controversy help or hurt a brand? *International Journal of Research in Marketing*, 37(4), 772–788.
-
-Muniz, A. M., and O'Guinn, T. C. (2001). Brand community. *Journal of Consumer Research*, 27(4), 412–432.
-
-Neilson, L. A. (2010). Boycott or buycott? Understanding political consumerism. *Journal of Consumer Behaviour*, 9(3), 214–227.
-
-Nelson, P. (1970). Information and consumer behavior. *Journal of Political Economy*, 78(2), 311–329.
-
-Newman, B. J., and Bartels, B. L. (2011). Politics at the checkout line: Explaining political consumerism in the United States. *Political Research Quarterly*, 64(4), 803–817.
-
-Plassmann, H., O'Doherty, J., Shiv, B., and Rangel, A. (2008). Marketing actions can modulate neural representations of experienced pleasantness. *Proceedings of the National Academy of Sciences*, 105(3), 1050–1054.
-
-Reimann, M., Schilke, O., and Thomas, J. S. (2010). Toward an understanding of industry commoditization: Its nature and role in evolving marketing competition. *International Journal of Research in Marketing*, 27(2), 188–197.
-
-Rozin, P. (1999). The process of moralization. *Psychological Science*, 10(3), 218–221.
-
-Rozin, P., and Royzman, E. B. (2001). Negativity bias, negativity dominance, and contagion. *Personality and Social Psychology Review*, 5(4), 296–320.
-
-Rozin, P., Millman, L., and Nemeroff, C. (1986). Operation of the laws of sympathetic magic in disgust and other domains. *Journal of Personality and Social Psychology*, 50(4), 703–712.
-
-Sen, S., Gürhan-Canli, Z., and Morwitz, V. (2001). Withholding consumption: A social dilemma perspective on consumer boycotts. *Journal of Consumer Research*, 28(3), 399–417.
-
-Stolle, D., Hooghe, M., and Micheletti, M. (2005). Politics in the supermarket: Political consumerism as a form of political participation. *International Political Science Review*, 26(3), 245–269.
-
-Tajfel, H., and Turner, J. C. (1979). An integrative theory of intergroup conflict. In W. G. Austin and S. Worchel (Eds.), *The Social Psychology of Intergroup Relations* (pp. 33–47). Brooks/Cole.
-
-Varadarajan, P. R., and Menon, A. (1988). Cause-related marketing: A coalignment of marketing strategy and corporate philanthropy. *Journal of Marketing*, 52(3), 58–74.
-
-Veblen, T. (1899). *The Theory of the Leisure Class: An Economic Study of Institutions*. Macmillan.
-
-Vredenburg, J., Kapitan, S., Spry, A., and Kemper, J. A. (2020). Brands taking a stand: Authentic brand activism or woke washing? *Journal of Public Policy & Marketing*, 39(4), 444–460.

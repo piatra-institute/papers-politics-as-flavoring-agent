@@ -2,6 +2,16 @@
 
 Dated log of editorial passes and verification runs. Newest first.
 
+## 2026-09-23 — structured-evidence migration
+
+Structured-evidence migration (references and claims).
+- references.yaml: 42 CSL entries. 35 resolved through Crossref and doi.org and checked for year, title and authors (mukherjee2020 and vredenburg2020 completed by hand from their Crossref records; newman2011 keeps its 2011 issue year); 7 entered by hand (banetweiser2012, bourdieu1984, christensen1997, friedman1999, holt2004, tajfel1979, veblen1899). Crossref had matched hirschman1970 to a Journal of Finance review; replaced by the Harvard book.
+- Corrections: none to the manuscript; bibliographic details completed (Akerlof 1970 pages 488-500, full author names).
+- claims.yaml: 50 claims (33 computation, 7 source, 4 interpretation, 3 definition, 2 assumption, 1 normative). Every model number in the abstract and Sections 3-4 is bound to simulation/output/results.json, including stipulated parameters. Source claims checked against Crossref abstracts (Plassmann et al. price and pleasantness; Lee, Frederick and Ariely disclosure timing; Chapman et al. moral disgust; Rozin and Royzman negativity dominance; Hydock et al. large-share brands; Hainmueller et al. fair-trade field experiment; Kam and Deichert boycott and buycott).
+- Not verified, left unbound: Mukherjee and Althuizen, Reimann et al., Rozin et al. 1986 (no abstract retrievable); Berger and Heath on public consumption (abstract names identity domains, not visibility); Iyengar et al., Stolle et al., Newman and Bartels, Endres and Panagopoulos, Neilson, Vredenburg et al., Bhagwat et al. (cited for literature positioning); book claims (Veblen, Bourdieu, Holt, Christensen, Friedman, Micheletti, Banet-Weiser, Hirschman, Tajfel and Turner); the public cases in Section 5.
+- Run: flavoring (uv run python run_all.py, seed 60240), reproduced results.json byte-identically; receipt verification/flavoring.json.
+- metadata claims_target: claim-ledger.
+
 ## 2026-09-23 — prose revision
 
 Headings now: Abstract; 1. Introduction; 2. Background: Expectation, Contamination, and Credence Goods; 3. Model; 4. Results (4.1 The flavoring share is unidentified at the quality plateau; 4.2 A functional-dispersion threshold for political choice; 4.3 Brand activism under negativity dominance); 5. Application to Public Cases; 6. Limitations; 7. Conclusion; Reproducibility.
